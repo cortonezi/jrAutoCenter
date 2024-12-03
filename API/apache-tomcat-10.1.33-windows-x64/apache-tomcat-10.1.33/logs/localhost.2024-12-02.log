@@ -1,0 +1,213 @@
+02-Dec-2024 01:14:23.279 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+02-Dec-2024 01:14:23.279 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
+02-Dec-2024 01:14:27.985 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+02-Dec-2024 01:14:27.985 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+02-Dec-2024 01:14:27.987 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@6a1d204a')
+02-Dec-2024 01:16:16.598 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+02-Dec-2024 01:16:16.598 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
+02-Dec-2024 01:16:26.738 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+02-Dec-2024 01:16:26.738 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+02-Dec-2024 01:16:26.740 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@74ad8d05')
+02-Dec-2024 08:00:03.206 SEVERE [http-nio-8080-exec-19] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/ProjetoSenac] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [18] in the generated java file: [C:\Users\rafae\OneDrive\Área de Trabalho\Projeto Web Senac\API\apache-tomcat-10.1.33-windows-x64\apache-tomcat-10.1.33\work\Catalina\localhost\ProjetoSenac\org\apache\jsp\processar_005fcadastro_jsp.java]
+The import DatabaseConnection cannot be resolved
+
+An error occurred at line: [32] in the jsp file: [/processar_cadastro.jsp]
+DatabaseConnection cannot be resolved
+29: 
+30:             if (nome != null && cpf != null && email != null) {
+31:                 try {
+32:                     Connection conecta = DatabaseConnection.getConnection();
+33: 
+34:                     // Verifica duplicidade
+35:                     String checkSql = "SELECT * FROM clientes WHERE cpf = ? OR email = ?";
+
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [18] in the generated java file: [C:\Users\rafae\OneDrive\Área de Trabalho\Projeto Web Senac\API\apache-tomcat-10.1.33-windows-x64\apache-tomcat-10.1.33\work\Catalina\localhost\ProjetoSenac\org\apache\jsp\processar_005fcadastro_jsp.java]
+The import DatabaseConnection cannot be resolved
+
+An error occurred at line: [32] in the jsp file: [/processar_cadastro.jsp]
+DatabaseConnection cannot be resolved
+29: 
+30:             if (nome != null && cpf != null && email != null) {
+31:                 try {
+32:                     Connection conecta = DatabaseConnection.getConnection();
+33: 
+34:                     // Verifica duplicidade
+35:                     String checkSql = "SELECT * FROM clientes WHERE cpf = ? OR email = ?";
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:81)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:214)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:543)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:377)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:325)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:663)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:1570)
+02-Dec-2024 08:00:51.062 SEVERE [http-nio-8080-exec-23] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/ProjetoSenac] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [18] in the generated java file: [C:\Users\rafae\OneDrive\Área de Trabalho\Projeto Web Senac\API\apache-tomcat-10.1.33-windows-x64\apache-tomcat-10.1.33\work\Catalina\localhost\ProjetoSenac\org\apache\jsp\processar_005fcadastro_jsp.java]
+The import DatabaseConnection cannot be resolved
+
+An error occurred at line: [32] in the jsp file: [/processar_cadastro.jsp]
+DatabaseConnection cannot be resolved
+29: 
+30:             if (nome != null && cpf != null && email != null) {
+31:                 try {
+32:                     Connection conecta = DatabaseConnection.getConnection();
+33: 
+34:                     // Verifica duplicidade
+35:                     String checkSql = "SELECT * FROM clientes WHERE cpf = ? OR email = ?";
+
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [18] in the generated java file: [C:\Users\rafae\OneDrive\Área de Trabalho\Projeto Web Senac\API\apache-tomcat-10.1.33-windows-x64\apache-tomcat-10.1.33\work\Catalina\localhost\ProjetoSenac\org\apache\jsp\processar_005fcadastro_jsp.java]
+The import DatabaseConnection cannot be resolved
+
+An error occurred at line: [32] in the jsp file: [/processar_cadastro.jsp]
+DatabaseConnection cannot be resolved
+29: 
+30:             if (nome != null && cpf != null && email != null) {
+31:                 try {
+32:                     Connection conecta = DatabaseConnection.getConnection();
+33: 
+34:                     // Verifica duplicidade
+35:                     String checkSql = "SELECT * FROM clientes WHERE cpf = ? OR email = ?";
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:81)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:214)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:543)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:377)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:325)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:663)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:1570)
+02-Dec-2024 08:18:41.945 SEVERE [http-nio-8080-exec-47] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/ProjetoSenac] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [18] in the generated java file: [C:\Users\rafae\OneDrive\Área de Trabalho\Projeto Web Senac\API\apache-tomcat-10.1.33-windows-x64\apache-tomcat-10.1.33\work\Catalina\localhost\ProjetoSenac\org\apache\jsp\processar_005fcadastro_jsp.java]
+Only a type can be imported. conexao.DatabaseConnection resolves to a package
+
+An error occurred at line: [33] in the jsp file: [/processar_cadastro.jsp]
+DatabaseConnection cannot be resolved
+30: 
+31:             if (nome != null && cpf != null && email != null) {
+32:                 try {
+33:                     Connection conecta = DatabaseConnection.getConnection();
+34: 
+35:                     // Verifica duplicidade
+36:                     String checkSql = "SELECT * FROM clientes WHERE cpf = ? OR email = ?";
+
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [18] in the generated java file: [C:\Users\rafae\OneDrive\Área de Trabalho\Projeto Web Senac\API\apache-tomcat-10.1.33-windows-x64\apache-tomcat-10.1.33\work\Catalina\localhost\ProjetoSenac\org\apache\jsp\processar_005fcadastro_jsp.java]
+Only a type can be imported. conexao.DatabaseConnection resolves to a package
+
+An error occurred at line: [33] in the jsp file: [/processar_cadastro.jsp]
+DatabaseConnection cannot be resolved
+30: 
+31:             if (nome != null && cpf != null && email != null) {
+32:                 try {
+33:                     Connection conecta = DatabaseConnection.getConnection();
+34: 
+35:                     // Verifica duplicidade
+36:                     String checkSql = "SELECT * FROM clientes WHERE cpf = ? OR email = ?";
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:81)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:214)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:543)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:377)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:325)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:663)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:1570)
+02-Dec-2024 23:58:32.959 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+02-Dec-2024 23:58:32.959 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()

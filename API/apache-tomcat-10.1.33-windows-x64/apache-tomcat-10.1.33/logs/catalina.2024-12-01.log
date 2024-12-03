@@ -1,0 +1,260 @@
+01-Dec-2024 10:00:23.353 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.1.33
+01-Dec-2024 10:00:23.356 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Nov 7 2024 22:28:55 UTC
+01-Dec-2024 10:00:23.357 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.1.33.0
+01-Dec-2024 10:00:23.357 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 11
+01-Dec-2024 10:00:23.357 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+01-Dec-2024 10:00:23.357 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+01-Dec-2024 10:00:23.357 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jdk-22
+01-Dec-2024 10:00:23.357 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           22.0.1+8-16
+01-Dec-2024 10:00:23.357 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+01-Dec-2024 10:00:23.357 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\rafae\OneDrive\Área de Trabalho\Projeto Web Senac\API\apache-tomcat-10.1.33-windows-x64\apache-tomcat-10.1.33
+01-Dec-2024 10:00:23.357 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Users\rafae\OneDrive\Área de Trabalho\Projeto Web Senac\API\apache-tomcat-10.1.33-windows-x64\apache-tomcat-10.1.33
+01-Dec-2024 10:00:23.366 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Users\rafae\OneDrive\Área de Trabalho\Projeto Web Senac\API\apache-tomcat-10.1.33-windows-x64\apache-tomcat-10.1.33\conf\logging.properties
+01-Dec-2024 10:00:23.368 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+01-Dec-2024 10:00:23.368 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+01-Dec-2024 10:00:23.368 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+01-Dec-2024 10:00:23.368 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+01-Dec-2024 10:00:23.368 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+01-Dec-2024 10:00:23.368 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+01-Dec-2024 10:00:23.368 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+01-Dec-2024 10:00:23.368 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+01-Dec-2024 10:00:23.368 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Users\rafae\OneDrive\Área de Trabalho\Projeto Web Senac\API\apache-tomcat-10.1.33-windows-x64\apache-tomcat-10.1.33
+01-Dec-2024 10:00:23.369 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\Users\rafae\OneDrive\Área de Trabalho\Projeto Web Senac\API\apache-tomcat-10.1.33-windows-x64\apache-tomcat-10.1.33
+01-Dec-2024 10:00:23.369 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Users\rafae\OneDrive\Área de Trabalho\Projeto Web Senac\API\apache-tomcat-10.1.33-windows-x64\apache-tomcat-10.1.33\temp
+01-Dec-2024 10:00:23.375 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Loaded Apache Tomcat Native library [2.0.8] using APR version [1.7.4].
+01-Dec-2024 10:00:23.398 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized [OpenSSL 3.0.14 4 Jun 2024]
+01-Dec-2024 10:00:23.704 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+01-Dec-2024 10:00:23.729 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [620] milliseconds
+01-Dec-2024 10:00:23.805 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+01-Dec-2024 10:00:23.806 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/10.1.33]
+01-Dec-2024 10:00:23.822 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying deployment descriptor [C:\Users\rafae\OneDrive\Área de Trabalho\Projeto Web Senac\API\apache-tomcat-10.1.33-windows-x64\apache-tomcat-10.1.33\conf\Catalina\localhost\ProjetoSenac.xml]
+01-Dec-2024 10:00:23.837 WARNING [main] org.apache.catalina.startup.HostConfig.deployDescriptor The path attribute with value [/ProjetoSenac] in deployment descriptor [C:\Users\rafae\OneDrive\Área de Trabalho\Projeto Web Senac\API\apache-tomcat-10.1.33-windows-x64\apache-tomcat-10.1.33\conf\Catalina\localhost\ProjetoSenac.xml] has been ignored
+01-Dec-2024 10:00:24.543 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+01-Dec-2024 10:00:24.591 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [C:\Users\rafae\OneDrive\Área de Trabalho\Projeto Web Senac\API\apache-tomcat-10.1.33-windows-x64\apache-tomcat-10.1.33\conf\Catalina\localhost\ProjetoSenac.xml] has finished in [764] ms
+01-Dec-2024 10:00:24.592 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Diretório de instalação da aplicação web [C:\Users\rafae\OneDrive\Área de Trabalho\Projeto Web Senac\API\apache-tomcat-10.1.33-windows-x64\apache-tomcat-10.1.33\webapps\docs]
+01-Dec-2024 10:00:24.637 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\rafae\OneDrive\Área de Trabalho\Projeto Web Senac\API\apache-tomcat-10.1.33-windows-x64\apache-tomcat-10.1.33\webapps\docs] has finished in [46] ms
+01-Dec-2024 10:00:24.637 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Diretório de instalação da aplicação web [C:\Users\rafae\OneDrive\Área de Trabalho\Projeto Web Senac\API\apache-tomcat-10.1.33-windows-x64\apache-tomcat-10.1.33\webapps\examples]
+01-Dec-2024 10:00:25.082 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\rafae\OneDrive\Área de Trabalho\Projeto Web Senac\API\apache-tomcat-10.1.33-windows-x64\apache-tomcat-10.1.33\webapps\examples] has finished in [445] ms
+01-Dec-2024 10:00:25.082 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Diretório de instalação da aplicação web [C:\Users\rafae\OneDrive\Área de Trabalho\Projeto Web Senac\API\apache-tomcat-10.1.33-windows-x64\apache-tomcat-10.1.33\webapps\host-manager]
+01-Dec-2024 10:00:25.129 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\rafae\OneDrive\Área de Trabalho\Projeto Web Senac\API\apache-tomcat-10.1.33-windows-x64\apache-tomcat-10.1.33\webapps\host-manager] has finished in [46] ms
+01-Dec-2024 10:00:25.129 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Diretório de instalação da aplicação web [C:\Users\rafae\OneDrive\Área de Trabalho\Projeto Web Senac\API\apache-tomcat-10.1.33-windows-x64\apache-tomcat-10.1.33\webapps\manager]
+01-Dec-2024 10:00:25.167 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\rafae\OneDrive\Área de Trabalho\Projeto Web Senac\API\apache-tomcat-10.1.33-windows-x64\apache-tomcat-10.1.33\webapps\manager] has finished in [38] ms
+01-Dec-2024 10:00:25.167 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Diretório de instalação da aplicação web [C:\Users\rafae\OneDrive\Área de Trabalho\Projeto Web Senac\API\apache-tomcat-10.1.33-windows-x64\apache-tomcat-10.1.33\webapps\ROOT]
+01-Dec-2024 10:00:25.197 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\rafae\OneDrive\Área de Trabalho\Projeto Web Senac\API\apache-tomcat-10.1.33-windows-x64\apache-tomcat-10.1.33\webapps\ROOT] has finished in [30] ms
+01-Dec-2024 10:00:25.201 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+01-Dec-2024 10:00:25.231 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [1500] milliseconds
+01-Dec-2024 10:53:02.501 WARNING [http-nio-8080-exec-10] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [ProjetoSenac] registered the JDBC driver [com.mysql.cj.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+01-Dec-2024 10:53:02.503 WARNING [http-nio-8080-exec-10] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [ProjetoSenac] appears to have started a thread named [mysql-cj-abandoned-connection-cleanup] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+ java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1847)
+ java.base/java.lang.ref.ReferenceQueue.await(ReferenceQueue.java:71)
+ java.base/java.lang.ref.ReferenceQueue.remove0(ReferenceQueue.java:143)
+ java.base/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:218)
+ com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:84)
+ java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+ java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+ java.base/java.lang.Thread.run(Thread.java:1570)
+01-Dec-2024 10:53:03.026 INFO [http-nio-8080-exec-10] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/ProjetoSenac]
+01-Dec-2024 10:53:06.956 INFO [mysql-cj-abandoned-connection-cleanup] org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading Illegal access: this web application instance has been stopped already. Could not load []. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+	java.lang.IllegalStateException: Illegal access: this web application instance has been stopped already. Could not load []. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+		at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1384)
+		at org.apache.catalina.loader.WebappClassLoaderBase.getResource(WebappClassLoaderBase.java:975)
+		at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.checkThreadContextClassLoader(AbandonedConnectionCleanupThread.java:116)
+		at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:83)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+		at java.base/java.lang.Thread.run(Thread.java:1570)
+01-Dec-2024 10:54:16.176 INFO [http-nio-8080-exec-18] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying deployment descriptor [C:\Users\rafae\OneDrive\Área de Trabalho\Projeto Web Senac\API\apache-tomcat-10.1.33-windows-x64\apache-tomcat-10.1.33\conf\Catalina\localhost\ProjetoSenac.xml]
+01-Dec-2024 10:54:16.179 WARNING [http-nio-8080-exec-18] org.apache.catalina.startup.HostConfig.deployDescriptor The path attribute with value [/ProjetoSenac] in deployment descriptor [C:\Users\rafae\OneDrive\Área de Trabalho\Projeto Web Senac\API\apache-tomcat-10.1.33-windows-x64\apache-tomcat-10.1.33\conf\Catalina\localhost\ProjetoSenac.xml] has been ignored
+01-Dec-2024 10:54:16.400 INFO [http-nio-8080-exec-18] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+01-Dec-2024 10:54:16.403 INFO [http-nio-8080-exec-18] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [C:\Users\rafae\OneDrive\Área de Trabalho\Projeto Web Senac\API\apache-tomcat-10.1.33-windows-x64\apache-tomcat-10.1.33\conf\Catalina\localhost\ProjetoSenac.xml] has finished in [226] ms
+01-Dec-2024 10:54:16.407 INFO [http-nio-8080-exec-7] org.apache.catalina.util.LifecycleBase.start The start() method was called on component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/ProjetoSenac]] after start() had already been called. The second call will be ignored.
+01-Dec-2024 12:20:14.371 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+01-Dec-2024 12:20:14.371 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+01-Dec-2024 12:20:14.388 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+01-Dec-2024 12:20:14.398 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [ProjetoSenac] registered the JDBC driver [com.mysql.cj.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+01-Dec-2024 12:20:14.398 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [ProjetoSenac] appears to have started a thread named [mysql-cj-abandoned-connection-cleanup] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+ java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1847)
+ java.base/java.lang.ref.ReferenceQueue.await(ReferenceQueue.java:71)
+ java.base/java.lang.ref.ReferenceQueue.remove0(ReferenceQueue.java:143)
+ java.base/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:218)
+ com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:84)
+ java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+ java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+ java.base/java.lang.Thread.run(Thread.java:1570)
+01-Dec-2024 12:20:14.414 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+01-Dec-2024 12:20:14.429 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+01-Dec-2024 12:20:14.478 INFO [mysql-cj-abandoned-connection-cleanup] org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading Illegal access: this web application instance has been stopped already. Could not load []. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+	java.lang.IllegalStateException: Illegal access: this web application instance has been stopped already. Could not load []. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+		at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1384)
+		at org.apache.catalina.loader.WebappClassLoaderBase.getResource(WebappClassLoaderBase.java:975)
+		at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.checkThreadContextClassLoader(AbandonedConnectionCleanupThread.java:116)
+		at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:83)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+		at java.base/java.lang.Thread.run(Thread.java:1570)
+01-Dec-2024 12:20:14.479 INFO [mysql-cj-abandoned-connection-cleanup] org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading Illegal access: this web application instance has been stopped already. Could not load []. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+	java.lang.IllegalStateException: Illegal access: this web application instance has been stopped already. Could not load []. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+		at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1384)
+		at org.apache.catalina.loader.WebappClassLoaderBase.getResource(WebappClassLoaderBase.java:975)
+		at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.checkThreadContextClassLoader(AbandonedConnectionCleanupThread.java:116)
+		at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:83)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+		at java.base/java.lang.Thread.run(Thread.java:1570)
+01-Dec-2024 19:36:29.125 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.1.33
+01-Dec-2024 19:36:29.132 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Nov 7 2024 22:28:55 UTC
+01-Dec-2024 19:36:29.132 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.1.33.0
+01-Dec-2024 19:36:29.133 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 11
+01-Dec-2024 19:36:29.133 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+01-Dec-2024 19:36:29.133 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+01-Dec-2024 19:36:29.134 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jdk-22
+01-Dec-2024 19:36:29.134 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           22.0.1+8-16
+01-Dec-2024 19:36:29.135 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+01-Dec-2024 19:36:29.135 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\rafae\OneDrive\Área de Trabalho\Projeto Web Senac\API\apache-tomcat-10.1.33-windows-x64\apache-tomcat-10.1.33
+01-Dec-2024 19:36:29.135 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Users\rafae\OneDrive\Área de Trabalho\Projeto Web Senac\API\apache-tomcat-10.1.33-windows-x64\apache-tomcat-10.1.33
+01-Dec-2024 19:36:29.150 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Users\rafae\OneDrive\Área de Trabalho\Projeto Web Senac\API\apache-tomcat-10.1.33-windows-x64\apache-tomcat-10.1.33\conf\logging.properties
+01-Dec-2024 19:36:29.150 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+01-Dec-2024 19:36:29.151 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+01-Dec-2024 19:36:29.151 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+01-Dec-2024 19:36:29.151 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+01-Dec-2024 19:36:29.151 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+01-Dec-2024 19:36:29.152 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+01-Dec-2024 19:36:29.152 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+01-Dec-2024 19:36:29.152 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+01-Dec-2024 19:36:29.152 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Users\rafae\OneDrive\Área de Trabalho\Projeto Web Senac\API\apache-tomcat-10.1.33-windows-x64\apache-tomcat-10.1.33
+01-Dec-2024 19:36:29.152 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\Users\rafae\OneDrive\Área de Trabalho\Projeto Web Senac\API\apache-tomcat-10.1.33-windows-x64\apache-tomcat-10.1.33
+01-Dec-2024 19:36:29.152 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Users\rafae\OneDrive\Área de Trabalho\Projeto Web Senac\API\apache-tomcat-10.1.33-windows-x64\apache-tomcat-10.1.33\temp
+01-Dec-2024 19:36:29.158 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Loaded Apache Tomcat Native library [2.0.8] using APR version [1.7.4].
+01-Dec-2024 19:36:29.163 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized [OpenSSL 3.0.14 4 Jun 2024]
+01-Dec-2024 19:36:29.608 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+01-Dec-2024 19:36:29.637 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [848] milliseconds
+01-Dec-2024 19:36:29.786 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+01-Dec-2024 19:36:29.786 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/10.1.33]
+01-Dec-2024 19:36:29.812 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying deployment descriptor [C:\Users\rafae\OneDrive\Área de Trabalho\Projeto Web Senac\API\apache-tomcat-10.1.33-windows-x64\apache-tomcat-10.1.33\conf\Catalina\localhost\ProjetoSenac.xml]
+01-Dec-2024 19:36:29.850 WARNING [main] org.apache.catalina.startup.HostConfig.deployDescriptor The path attribute with value [/ProjetoSenac] in deployment descriptor [C:\Users\rafae\OneDrive\Área de Trabalho\Projeto Web Senac\API\apache-tomcat-10.1.33-windows-x64\apache-tomcat-10.1.33\conf\Catalina\localhost\ProjetoSenac.xml] has been ignored
+01-Dec-2024 19:36:30.837 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+01-Dec-2024 19:36:30.925 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [C:\Users\rafae\OneDrive\Área de Trabalho\Projeto Web Senac\API\apache-tomcat-10.1.33-windows-x64\apache-tomcat-10.1.33\conf\Catalina\localhost\ProjetoSenac.xml] has finished in [1.106] ms
+01-Dec-2024 19:36:30.929 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Diretório de instalação da aplicação web [C:\Users\rafae\OneDrive\Área de Trabalho\Projeto Web Senac\API\apache-tomcat-10.1.33-windows-x64\apache-tomcat-10.1.33\webapps\docs]
+01-Dec-2024 19:36:30.974 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\rafae\OneDrive\Área de Trabalho\Projeto Web Senac\API\apache-tomcat-10.1.33-windows-x64\apache-tomcat-10.1.33\webapps\docs] has finished in [46] ms
+01-Dec-2024 19:36:30.974 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Diretório de instalação da aplicação web [C:\Users\rafae\OneDrive\Área de Trabalho\Projeto Web Senac\API\apache-tomcat-10.1.33-windows-x64\apache-tomcat-10.1.33\webapps\examples]
+01-Dec-2024 19:36:31.847 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\rafae\OneDrive\Área de Trabalho\Projeto Web Senac\API\apache-tomcat-10.1.33-windows-x64\apache-tomcat-10.1.33\webapps\examples] has finished in [872] ms
+01-Dec-2024 19:36:31.847 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Diretório de instalação da aplicação web [C:\Users\rafae\OneDrive\Área de Trabalho\Projeto Web Senac\API\apache-tomcat-10.1.33-windows-x64\apache-tomcat-10.1.33\webapps\host-manager]
+01-Dec-2024 19:36:31.961 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\rafae\OneDrive\Área de Trabalho\Projeto Web Senac\API\apache-tomcat-10.1.33-windows-x64\apache-tomcat-10.1.33\webapps\host-manager] has finished in [114] ms
+01-Dec-2024 19:36:31.961 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Diretório de instalação da aplicação web [C:\Users\rafae\OneDrive\Área de Trabalho\Projeto Web Senac\API\apache-tomcat-10.1.33-windows-x64\apache-tomcat-10.1.33\webapps\manager]
+01-Dec-2024 19:36:32.079 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\rafae\OneDrive\Área de Trabalho\Projeto Web Senac\API\apache-tomcat-10.1.33-windows-x64\apache-tomcat-10.1.33\webapps\manager] has finished in [118] ms
+01-Dec-2024 19:36:32.080 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Diretório de instalação da aplicação web [C:\Users\rafae\OneDrive\Área de Trabalho\Projeto Web Senac\API\apache-tomcat-10.1.33-windows-x64\apache-tomcat-10.1.33\webapps\ROOT]
+01-Dec-2024 19:36:32.143 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\rafae\OneDrive\Área de Trabalho\Projeto Web Senac\API\apache-tomcat-10.1.33-windows-x64\apache-tomcat-10.1.33\webapps\ROOT] has finished in [64] ms
+01-Dec-2024 19:36:32.152 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+01-Dec-2024 19:36:32.216 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [2592] milliseconds
+01-Dec-2024 19:44:44.794 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+01-Dec-2024 19:44:44.801 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+01-Dec-2024 19:44:44.802 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+01-Dec-2024 19:44:44.820 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+01-Dec-2024 19:44:44.835 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+01-Dec-2024 23:16:04.074 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.1.33
+01-Dec-2024 23:16:04.074 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Nov 7 2024 22:28:55 UTC
+01-Dec-2024 23:16:04.074 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.1.33.0
+01-Dec-2024 23:16:04.074 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 11
+01-Dec-2024 23:16:04.074 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+01-Dec-2024 23:16:04.074 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+01-Dec-2024 23:16:04.074 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jdk-22
+01-Dec-2024 23:16:04.074 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           22.0.1+8-16
+01-Dec-2024 23:16:04.074 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+01-Dec-2024 23:16:04.074 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\rafae\OneDrive\Área de Trabalho\Projeto Web Senac\API\apache-tomcat-10.1.33-windows-x64\apache-tomcat-10.1.33
+01-Dec-2024 23:16:04.092 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Users\rafae\OneDrive\Área de Trabalho\Projeto Web Senac\API\apache-tomcat-10.1.33-windows-x64\apache-tomcat-10.1.33
+01-Dec-2024 23:16:04.111 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Users\rafae\OneDrive\Área de Trabalho\Projeto Web Senac\API\apache-tomcat-10.1.33-windows-x64\apache-tomcat-10.1.33\conf\logging.properties
+01-Dec-2024 23:16:04.111 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+01-Dec-2024 23:16:04.111 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+01-Dec-2024 23:16:04.111 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+01-Dec-2024 23:16:04.113 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+01-Dec-2024 23:16:04.113 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+01-Dec-2024 23:16:04.113 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+01-Dec-2024 23:16:04.114 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+01-Dec-2024 23:16:04.114 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+01-Dec-2024 23:16:04.114 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Users\rafae\OneDrive\Área de Trabalho\Projeto Web Senac\API\apache-tomcat-10.1.33-windows-x64\apache-tomcat-10.1.33
+01-Dec-2024 23:16:04.115 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\Users\rafae\OneDrive\Área de Trabalho\Projeto Web Senac\API\apache-tomcat-10.1.33-windows-x64\apache-tomcat-10.1.33
+01-Dec-2024 23:16:04.115 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Users\rafae\OneDrive\Área de Trabalho\Projeto Web Senac\API\apache-tomcat-10.1.33-windows-x64\apache-tomcat-10.1.33\temp
+01-Dec-2024 23:16:04.117 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Loaded Apache Tomcat Native library [2.0.8] using APR version [1.7.4].
+01-Dec-2024 23:16:04.123 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized [OpenSSL 3.0.14 4 Jun 2024]
+01-Dec-2024 23:16:04.436 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+01-Dec-2024 23:16:04.457 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [644] milliseconds
+01-Dec-2024 23:16:04.534 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+01-Dec-2024 23:16:04.534 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/10.1.33]
+01-Dec-2024 23:16:04.547 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying deployment descriptor [C:\Users\rafae\OneDrive\Área de Trabalho\Projeto Web Senac\API\apache-tomcat-10.1.33-windows-x64\apache-tomcat-10.1.33\conf\Catalina\localhost\ProjetoSenac.xml]
+01-Dec-2024 23:16:04.557 WARNING [main] org.apache.catalina.startup.HostConfig.deployDescriptor The path attribute with value [/ProjetoSenac] in deployment descriptor [C:\Users\rafae\OneDrive\Área de Trabalho\Projeto Web Senac\API\apache-tomcat-10.1.33-windows-x64\apache-tomcat-10.1.33\conf\Catalina\localhost\ProjetoSenac.xml] has been ignored
+01-Dec-2024 23:16:05.223 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+01-Dec-2024 23:16:05.285 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [C:\Users\rafae\OneDrive\Área de Trabalho\Projeto Web Senac\API\apache-tomcat-10.1.33-windows-x64\apache-tomcat-10.1.33\conf\Catalina\localhost\ProjetoSenac.xml] has finished in [736] ms
+01-Dec-2024 23:16:05.285 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Diretório de instalação da aplicação web [C:\Users\rafae\OneDrive\Área de Trabalho\Projeto Web Senac\API\apache-tomcat-10.1.33-windows-x64\apache-tomcat-10.1.33\webapps\docs]
+01-Dec-2024 23:16:05.356 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\rafae\OneDrive\Área de Trabalho\Projeto Web Senac\API\apache-tomcat-10.1.33-windows-x64\apache-tomcat-10.1.33\webapps\docs] has finished in [71] ms
+01-Dec-2024 23:16:05.356 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Diretório de instalação da aplicação web [C:\Users\rafae\OneDrive\Área de Trabalho\Projeto Web Senac\API\apache-tomcat-10.1.33-windows-x64\apache-tomcat-10.1.33\webapps\examples]
+01-Dec-2024 23:16:05.943 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\rafae\OneDrive\Área de Trabalho\Projeto Web Senac\API\apache-tomcat-10.1.33-windows-x64\apache-tomcat-10.1.33\webapps\examples] has finished in [587] ms
+01-Dec-2024 23:16:05.943 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Diretório de instalação da aplicação web [C:\Users\rafae\OneDrive\Área de Trabalho\Projeto Web Senac\API\apache-tomcat-10.1.33-windows-x64\apache-tomcat-10.1.33\webapps\host-manager]
+01-Dec-2024 23:16:06.003 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\rafae\OneDrive\Área de Trabalho\Projeto Web Senac\API\apache-tomcat-10.1.33-windows-x64\apache-tomcat-10.1.33\webapps\host-manager] has finished in [60] ms
+01-Dec-2024 23:16:06.003 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Diretório de instalação da aplicação web [C:\Users\rafae\OneDrive\Área de Trabalho\Projeto Web Senac\API\apache-tomcat-10.1.33-windows-x64\apache-tomcat-10.1.33\webapps\manager]
+01-Dec-2024 23:16:06.053 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\rafae\OneDrive\Área de Trabalho\Projeto Web Senac\API\apache-tomcat-10.1.33-windows-x64\apache-tomcat-10.1.33\webapps\manager] has finished in [50] ms
+01-Dec-2024 23:16:06.053 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Diretório de instalação da aplicação web [C:\Users\rafae\OneDrive\Área de Trabalho\Projeto Web Senac\API\apache-tomcat-10.1.33-windows-x64\apache-tomcat-10.1.33\webapps\ROOT]
+01-Dec-2024 23:16:06.102 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\rafae\OneDrive\Área de Trabalho\Projeto Web Senac\API\apache-tomcat-10.1.33-windows-x64\apache-tomcat-10.1.33\webapps\ROOT] has finished in [49] ms
+01-Dec-2024 23:16:06.106 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+01-Dec-2024 23:16:06.128 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [1659] milliseconds
+01-Dec-2024 23:26:01.504 INFO [http-nio-8080-exec-6] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/ProjetoSenac]
+01-Dec-2024 23:27:00.568 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+01-Dec-2024 23:27:00.568 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+01-Dec-2024 23:27:00.568 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+01-Dec-2024 23:27:00.592 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+01-Dec-2024 23:27:00.602 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+01-Dec-2024 23:27:03.955 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.1.33
+01-Dec-2024 23:27:03.961 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Nov 7 2024 22:28:55 UTC
+01-Dec-2024 23:27:03.961 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.1.33.0
+01-Dec-2024 23:27:03.961 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 11
+01-Dec-2024 23:27:03.961 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+01-Dec-2024 23:27:03.962 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+01-Dec-2024 23:27:03.962 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jdk-22
+01-Dec-2024 23:27:03.962 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           22.0.1+8-16
+01-Dec-2024 23:27:03.962 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+01-Dec-2024 23:27:03.962 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\rafae\OneDrive\Área de Trabalho\Projeto Web Senac\API\apache-tomcat-10.1.33-windows-x64\apache-tomcat-10.1.33
+01-Dec-2024 23:27:03.962 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Users\rafae\OneDrive\Área de Trabalho\Projeto Web Senac\API\apache-tomcat-10.1.33-windows-x64\apache-tomcat-10.1.33
+01-Dec-2024 23:27:03.974 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Users\rafae\OneDrive\Área de Trabalho\Projeto Web Senac\API\apache-tomcat-10.1.33-windows-x64\apache-tomcat-10.1.33\conf\logging.properties
+01-Dec-2024 23:27:03.974 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+01-Dec-2024 23:27:03.974 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+01-Dec-2024 23:27:03.975 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+01-Dec-2024 23:27:03.975 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+01-Dec-2024 23:27:03.975 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+01-Dec-2024 23:27:03.975 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+01-Dec-2024 23:27:03.975 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+01-Dec-2024 23:27:03.975 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+01-Dec-2024 23:27:03.975 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Users\rafae\OneDrive\Área de Trabalho\Projeto Web Senac\API\apache-tomcat-10.1.33-windows-x64\apache-tomcat-10.1.33
+01-Dec-2024 23:27:03.975 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\Users\rafae\OneDrive\Área de Trabalho\Projeto Web Senac\API\apache-tomcat-10.1.33-windows-x64\apache-tomcat-10.1.33
+01-Dec-2024 23:27:03.976 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Users\rafae\OneDrive\Área de Trabalho\Projeto Web Senac\API\apache-tomcat-10.1.33-windows-x64\apache-tomcat-10.1.33\temp
+01-Dec-2024 23:27:03.979 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Loaded Apache Tomcat Native library [2.0.8] using APR version [1.7.4].
+01-Dec-2024 23:27:04.041 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized [OpenSSL 3.0.14 4 Jun 2024]
+01-Dec-2024 23:27:04.429 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+01-Dec-2024 23:27:04.458 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [741] milliseconds
+01-Dec-2024 23:27:04.521 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+01-Dec-2024 23:27:04.521 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/10.1.33]
+01-Dec-2024 23:27:04.541 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Diretório de instalação da aplicação web [C:\Users\rafae\OneDrive\Área de Trabalho\Projeto Web Senac\API\apache-tomcat-10.1.33-windows-x64\apache-tomcat-10.1.33\webapps\docs]
+01-Dec-2024 23:27:04.913 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\rafae\OneDrive\Área de Trabalho\Projeto Web Senac\API\apache-tomcat-10.1.33-windows-x64\apache-tomcat-10.1.33\webapps\docs] has finished in [369] ms
+01-Dec-2024 23:27:04.914 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Diretório de instalação da aplicação web [C:\Users\rafae\OneDrive\Área de Trabalho\Projeto Web Senac\API\apache-tomcat-10.1.33-windows-x64\apache-tomcat-10.1.33\webapps\examples]
+01-Dec-2024 23:27:05.527 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\rafae\OneDrive\Área de Trabalho\Projeto Web Senac\API\apache-tomcat-10.1.33-windows-x64\apache-tomcat-10.1.33\webapps\examples] has finished in [613] ms
+01-Dec-2024 23:27:05.528 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Diretório de instalação da aplicação web [C:\Users\rafae\OneDrive\Área de Trabalho\Projeto Web Senac\API\apache-tomcat-10.1.33-windows-x64\apache-tomcat-10.1.33\webapps\host-manager]
+01-Dec-2024 23:27:05.587 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\rafae\OneDrive\Área de Trabalho\Projeto Web Senac\API\apache-tomcat-10.1.33-windows-x64\apache-tomcat-10.1.33\webapps\host-manager] has finished in [43] ms
+01-Dec-2024 23:27:05.587 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Diretório de instalação da aplicação web [C:\Users\rafae\OneDrive\Área de Trabalho\Projeto Web Senac\API\apache-tomcat-10.1.33-windows-x64\apache-tomcat-10.1.33\webapps\manager]
+01-Dec-2024 23:27:05.650 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\rafae\OneDrive\Área de Trabalho\Projeto Web Senac\API\apache-tomcat-10.1.33-windows-x64\apache-tomcat-10.1.33\webapps\manager] has finished in [63] ms
+01-Dec-2024 23:27:05.651 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Diretório de instalação da aplicação web [C:\Users\rafae\OneDrive\Área de Trabalho\Projeto Web Senac\API\apache-tomcat-10.1.33-windows-x64\apache-tomcat-10.1.33\webapps\ROOT]
+01-Dec-2024 23:27:05.683 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\rafae\OneDrive\Área de Trabalho\Projeto Web Senac\API\apache-tomcat-10.1.33-windows-x64\apache-tomcat-10.1.33\webapps\ROOT] has finished in [32] ms
+01-Dec-2024 23:27:05.688 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+01-Dec-2024 23:27:05.711 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [1257] milliseconds
+01-Dec-2024 23:27:31.040 INFO [http-nio-8080-exec-3] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying deployment descriptor [C:\Users\rafae\OneDrive\Área de Trabalho\Projeto Web Senac\API\apache-tomcat-10.1.33-windows-x64\apache-tomcat-10.1.33\conf\Catalina\localhost\ProjetoSenac.xml]
+01-Dec-2024 23:27:31.056 WARNING [http-nio-8080-exec-3] org.apache.catalina.startup.HostConfig.deployDescriptor The path attribute with value [/ProjetoSenac] in deployment descriptor [C:\Users\rafae\OneDrive\Área de Trabalho\Projeto Web Senac\API\apache-tomcat-10.1.33-windows-x64\apache-tomcat-10.1.33\conf\Catalina\localhost\ProjetoSenac.xml] has been ignored
+01-Dec-2024 23:27:31.465 INFO [http-nio-8080-exec-3] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+01-Dec-2024 23:27:31.478 INFO [http-nio-8080-exec-3] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [C:\Users\rafae\OneDrive\Área de Trabalho\Projeto Web Senac\API\apache-tomcat-10.1.33-windows-x64\apache-tomcat-10.1.33\conf\Catalina\localhost\ProjetoSenac.xml] has finished in [438] ms
+01-Dec-2024 23:27:31.482 INFO [http-nio-8080-exec-2] org.apache.catalina.util.LifecycleBase.start The start() method was called on component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/ProjetoSenac]] after start() had already been called. The second call will be ignored.
+01-Dec-2024 23:30:20.609 INFO [http-nio-8080-exec-3] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/ProjetoSenac]
+01-Dec-2024 23:30:50.609 INFO [http-nio-8080-exec-10] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying deployment descriptor [C:\Users\rafae\OneDrive\Área de Trabalho\Projeto Web Senac\API\apache-tomcat-10.1.33-windows-x64\apache-tomcat-10.1.33\conf\Catalina\localhost\ProjetoSenac.xml]
+01-Dec-2024 23:30:50.609 WARNING [http-nio-8080-exec-10] org.apache.catalina.startup.HostConfig.deployDescriptor The path attribute with value [/ProjetoSenac] in deployment descriptor [C:\Users\rafae\OneDrive\Área de Trabalho\Projeto Web Senac\API\apache-tomcat-10.1.33-windows-x64\apache-tomcat-10.1.33\conf\Catalina\localhost\ProjetoSenac.xml] has been ignored
+01-Dec-2024 23:30:51.481 INFO [http-nio-8080-exec-10] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+01-Dec-2024 23:30:51.481 INFO [http-nio-8080-exec-10] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [C:\Users\rafae\OneDrive\Área de Trabalho\Projeto Web Senac\API\apache-tomcat-10.1.33-windows-x64\apache-tomcat-10.1.33\conf\Catalina\localhost\ProjetoSenac.xml] has finished in [872] ms
+01-Dec-2024 23:30:51.495 INFO [http-nio-8080-exec-5] org.apache.catalina.util.LifecycleBase.start The start() method was called on component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/ProjetoSenac]] after start() had already been called. The second call will be ignored.

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Produtos</title>
+        <link rel="stylesheet" href="style.css?v=1.1">
+    </head>
+    <body>
+        <!-- Contêiner para pesquisa e tabela -->
+        <div class="container">
+            <h1>Pesquisar Produtos</h1>
+            <!-- Formulário de Pesquisa -->
+            <form action="pesquisarProdutos.jsp" method="get">
+                <div class="form-group">
+                    <label for="categoria">Categoria</label>
+                    <select id="categoria" name="categoria" required>
+                        <option value="">Selecione uma categoria</option>
+                        <option value="oleos">Óleos e Lubrificantes</option>
+                        <option value="pneus">Pneus</option>
+                        <option value="baterias">Baterias</option>
+                        <option value="filtros">Filtros</option>
+                        <option value="acessorios">Acessórios</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="nome_produto">Nome do Produto</label>
+                    <input type="text" id="nome_produto" name="nome_produto" placeholder="Digite o nome do produto">
+                </div>
+                <div class="form-group">
+                    <label for="codigo_produto">Código do Produto (SKU)</label>
+                    <input type="text" id="codigo_produto" name="codigo_produto" placeholder="Digite o código do produto">
+                </div>
+                <div class="form-group">
+                    <label for="marca">Marca</label>
+                    <input type="text" id="marca" name="marca" placeholder="Digite a marca do produto">
+                </div>
+                <div class="form-group">
+                    <label for="preco_min">Preço Mínimo</label>
+                    <input type="number" id="preco_min" name="preco_min" placeholder="Ex: 50.00" step="0.01">
+                </div>
+                <div class="form-group">
+                    <label for="preco_max">Preço Máximo</label>
+                    <input type="number" id="preco_max" name="preco_max" placeholder="Ex: 500.00" step="0.01">
+                </div>
+                <button type="submit">Pesquisar</button>
+            </form>
+        </div>
+    </body>
+</html>

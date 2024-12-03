@@ -1,0 +1,315 @@
+30-Nov-2024 00:20:34.723 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+30-Nov-2024 00:20:34.723 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
+30-Nov-2024 15:48:44.528 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+30-Nov-2024 15:48:44.528 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+30-Nov-2024 15:48:44.530 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@21c64522')
+30-Nov-2024 22:47:38.968 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+30-Nov-2024 22:47:38.968 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
+30-Nov-2024 22:47:44.367 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+30-Nov-2024 22:47:44.367 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+30-Nov-2024 22:47:44.371 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@74ad8d05')
+30-Nov-2024 22:49:04.328 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+30-Nov-2024 22:49:04.328 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
+30-Nov-2024 22:49:43.067 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+30-Nov-2024 22:49:43.067 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+30-Nov-2024 22:49:43.071 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@35ff8fc9')
+30-Nov-2024 23:10:10.392 SEVERE [http-nio-8080-exec-12] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/ProjetoSenac] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [52] in the jsp file: [/processar_cadastro.jsp]
+conecta cannot be resolved
+49: 
+50:             try {// Verificar se o CPF ou e-mail já existem
+51: String checkSql = "SELECT * FROM clientes WHERE cpf = ? OR email = ?";
+52: PreparedStatement checkStmt = conecta.prepareStatement(checkSql);
+53: checkStmt.setString(1, cpf);
+54: checkStmt.setString(2, email);
+55: ResultSet rs = checkStmt.executeQuery();
+
+
+An error occurred at line: [55] in the jsp file: [/processar_cadastro.jsp]
+ResultSet cannot be resolved to a type
+52: PreparedStatement checkStmt = conecta.prepareStatement(checkSql);
+53: checkStmt.setString(1, cpf);
+54: checkStmt.setString(2, email);
+55: ResultSet rs = checkStmt.executeQuery();
+56: 
+57: if (rs.next()) {
+58:     // CPF ou e-mail já cadastrados
+
+
+An error occurred at line: [59] in the jsp file: [/processar_cadastro.jsp]
+errorMessage cannot be resolved to a variable
+56: 
+57: if (rs.next()) {
+58:     // CPF ou e-mail já cadastrados
+59:     errorMessage = "CPF ou e-mail já cadastrado.";
+60: } else {
+61:     // Inserir os dados no banco de dados
+62:     String insertSql = "INSERT INTO clientes (nome, cpf, telefone, email, endereco, observacao) VALUES (?, ?, ?, ?, ?, ?)";
+
+
+An error occurred at line: [63] in the jsp file: [/processar_cadastro.jsp]
+conecta cannot be resolved
+60: } else {
+61:     // Inserir os dados no banco de dados
+62:     String insertSql = "INSERT INTO clientes (nome, cpf, telefone, email, endereco, observacao) VALUES (?, ?, ?, ?, ?, ?)";
+63:     PreparedStatement insertStmt = conecta.prepareStatement(insertSql);
+64: 
+65:     insertStmt.setString(1, nome);
+66:     insertStmt.setString(2, cpf);
+
+
+An error occurred at line: [75] in the jsp file: [/processar_cadastro.jsp]
+showForm cannot be resolved to a variable
+72:     int rowsInserted = insertStmt.executeUpdate();
+73:     if (rowsInserted > 0) {
+74:         out.print("<h3>Cliente cadastrado com sucesso!</h3>");
+75:         showForm = false; // Não exibir o formulário após o sucesso
+76:     }
+77: 
+78:     insertStmt.close();
+
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [52] in the jsp file: [/processar_cadastro.jsp]
+conecta cannot be resolved
+49: 
+50:             try {// Verificar se o CPF ou e-mail já existem
+51: String checkSql = "SELECT * FROM clientes WHERE cpf = ? OR email = ?";
+52: PreparedStatement checkStmt = conecta.prepareStatement(checkSql);
+53: checkStmt.setString(1, cpf);
+54: checkStmt.setString(2, email);
+55: ResultSet rs = checkStmt.executeQuery();
+
+
+An error occurred at line: [55] in the jsp file: [/processar_cadastro.jsp]
+ResultSet cannot be resolved to a type
+52: PreparedStatement checkStmt = conecta.prepareStatement(checkSql);
+53: checkStmt.setString(1, cpf);
+54: checkStmt.setString(2, email);
+55: ResultSet rs = checkStmt.executeQuery();
+56: 
+57: if (rs.next()) {
+58:     // CPF ou e-mail já cadastrados
+
+
+An error occurred at line: [59] in the jsp file: [/processar_cadastro.jsp]
+errorMessage cannot be resolved to a variable
+56: 
+57: if (rs.next()) {
+58:     // CPF ou e-mail já cadastrados
+59:     errorMessage = "CPF ou e-mail já cadastrado.";
+60: } else {
+61:     // Inserir os dados no banco de dados
+62:     String insertSql = "INSERT INTO clientes (nome, cpf, telefone, email, endereco, observacao) VALUES (?, ?, ?, ?, ?, ?)";
+
+
+An error occurred at line: [63] in the jsp file: [/processar_cadastro.jsp]
+conecta cannot be resolved
+60: } else {
+61:     // Inserir os dados no banco de dados
+62:     String insertSql = "INSERT INTO clientes (nome, cpf, telefone, email, endereco, observacao) VALUES (?, ?, ?, ?, ?, ?)";
+63:     PreparedStatement insertStmt = conecta.prepareStatement(insertSql);
+64: 
+65:     insertStmt.setString(1, nome);
+66:     insertStmt.setString(2, cpf);
+
+
+An error occurred at line: [75] in the jsp file: [/processar_cadastro.jsp]
+showForm cannot be resolved to a variable
+72:     int rowsInserted = insertStmt.executeUpdate();
+73:     if (rowsInserted > 0) {
+74:         out.print("<h3>Cliente cadastrado com sucesso!</h3>");
+75:         showForm = false; // Não exibir o formulário após o sucesso
+76:     }
+77: 
+78:     insertStmt.close();
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:81)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:214)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:543)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:377)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:325)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:663)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:1570)
+30-Nov-2024 23:11:03.981 SEVERE [http-nio-8080-exec-17] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/ProjetoSenac] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [52] in the jsp file: [/processar_cadastro.jsp]
+conecta cannot be resolved
+49: 
+50:             try {// Verificar se o CPF ou e-mail já existem
+51: String checkSql = "SELECT * FROM clientes WHERE cpf = ? OR email = ?";
+52: PreparedStatement checkStmt = conecta.prepareStatement(checkSql);
+53: checkStmt.setString(1, cpf);
+54: checkStmt.setString(2, email);
+55: ResultSet rs = checkStmt.executeQuery();
+
+
+An error occurred at line: [55] in the jsp file: [/processar_cadastro.jsp]
+ResultSet cannot be resolved to a type
+52: PreparedStatement checkStmt = conecta.prepareStatement(checkSql);
+53: checkStmt.setString(1, cpf);
+54: checkStmt.setString(2, email);
+55: ResultSet rs = checkStmt.executeQuery();
+56: 
+57: if (rs.next()) {
+58:     // CPF ou e-mail já cadastrados
+
+
+An error occurred at line: [59] in the jsp file: [/processar_cadastro.jsp]
+errorMessage cannot be resolved to a variable
+56: 
+57: if (rs.next()) {
+58:     // CPF ou e-mail já cadastrados
+59:     errorMessage = "CPF ou e-mail já cadastrado.";
+60: } else {
+61:     // Inserir os dados no banco de dados
+62:     String insertSql = "INSERT INTO clientes (nome, cpf, telefone, email, endereco, observacao) VALUES (?, ?, ?, ?, ?, ?)";
+
+
+An error occurred at line: [63] in the jsp file: [/processar_cadastro.jsp]
+conecta cannot be resolved
+60: } else {
+61:     // Inserir os dados no banco de dados
+62:     String insertSql = "INSERT INTO clientes (nome, cpf, telefone, email, endereco, observacao) VALUES (?, ?, ?, ?, ?, ?)";
+63:     PreparedStatement insertStmt = conecta.prepareStatement(insertSql);
+64: 
+65:     insertStmt.setString(1, nome);
+66:     insertStmt.setString(2, cpf);
+
+
+An error occurred at line: [75] in the jsp file: [/processar_cadastro.jsp]
+showForm cannot be resolved to a variable
+72:     int rowsInserted = insertStmt.executeUpdate();
+73:     if (rowsInserted > 0) {
+74:         out.print("<h3>Cliente cadastrado com sucesso!</h3>");
+75:         showForm = false; // Não exibir o formulário após o sucesso
+76:     }
+77: 
+78:     insertStmt.close();
+
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [52] in the jsp file: [/processar_cadastro.jsp]
+conecta cannot be resolved
+49: 
+50:             try {// Verificar se o CPF ou e-mail já existem
+51: String checkSql = "SELECT * FROM clientes WHERE cpf = ? OR email = ?";
+52: PreparedStatement checkStmt = conecta.prepareStatement(checkSql);
+53: checkStmt.setString(1, cpf);
+54: checkStmt.setString(2, email);
+55: ResultSet rs = checkStmt.executeQuery();
+
+
+An error occurred at line: [55] in the jsp file: [/processar_cadastro.jsp]
+ResultSet cannot be resolved to a type
+52: PreparedStatement checkStmt = conecta.prepareStatement(checkSql);
+53: checkStmt.setString(1, cpf);
+54: checkStmt.setString(2, email);
+55: ResultSet rs = checkStmt.executeQuery();
+56: 
+57: if (rs.next()) {
+58:     // CPF ou e-mail já cadastrados
+
+
+An error occurred at line: [59] in the jsp file: [/processar_cadastro.jsp]
+errorMessage cannot be resolved to a variable
+56: 
+57: if (rs.next()) {
+58:     // CPF ou e-mail já cadastrados
+59:     errorMessage = "CPF ou e-mail já cadastrado.";
+60: } else {
+61:     // Inserir os dados no banco de dados
+62:     String insertSql = "INSERT INTO clientes (nome, cpf, telefone, email, endereco, observacao) VALUES (?, ?, ?, ?, ?, ?)";
+
+
+An error occurred at line: [63] in the jsp file: [/processar_cadastro.jsp]
+conecta cannot be resolved
+60: } else {
+61:     // Inserir os dados no banco de dados
+62:     String insertSql = "INSERT INTO clientes (nome, cpf, telefone, email, endereco, observacao) VALUES (?, ?, ?, ?, ?, ?)";
+63:     PreparedStatement insertStmt = conecta.prepareStatement(insertSql);
+64: 
+65:     insertStmt.setString(1, nome);
+66:     insertStmt.setString(2, cpf);
+
+
+An error occurred at line: [75] in the jsp file: [/processar_cadastro.jsp]
+showForm cannot be resolved to a variable
+72:     int rowsInserted = insertStmt.executeUpdate();
+73:     if (rowsInserted > 0) {
+74:         out.print("<h3>Cliente cadastrado com sucesso!</h3>");
+75:         showForm = false; // Não exibir o formulário após o sucesso
+76:     }
+77: 
+78:     insertStmt.close();
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:81)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:214)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:543)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:377)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:325)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:663)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:1570)
+30-Nov-2024 23:53:36.442 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+30-Nov-2024 23:53:36.442 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()

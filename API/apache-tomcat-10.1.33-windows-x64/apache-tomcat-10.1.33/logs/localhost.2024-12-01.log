@@ -1,0 +1,316 @@
+01-Dec-2024 10:00:25.069 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+01-Dec-2024 10:00:25.070 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+01-Dec-2024 10:00:25.072 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@40368a46')
+01-Dec-2024 10:49:57.713 SEVERE [http-nio-8080-exec-4] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/ProjetoSenac] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [25] in the jsp file: [/processar_cadastro.jsp]
+Connection cannot be resolved to a type
+22:             if (nome != null && cpf != null && email != null) {
+23:                 try {
+24:                     Class.forName("com.mysql.cj.jdbc.Driver");
+25:                     Connection conecta = DriverManager.getConnection(
+26:                         "jdbc:mysql://localhost:3306/autocenterdb", 
+27:                         "root", 
+28:                         "123456"
+
+
+An error occurred at line: [25] in the jsp file: [/processar_cadastro.jsp]
+DriverManager cannot be resolved
+22:             if (nome != null && cpf != null && email != null) {
+23:                 try {
+24:                     Class.forName("com.mysql.cj.jdbc.Driver");
+25:                     Connection conecta = DriverManager.getConnection(
+26:                         "jdbc:mysql://localhost:3306/autocenterdb", 
+27:                         "root", 
+28:                         "123456"
+
+
+An error occurred at line: [33] in the jsp file: [/processar_cadastro.jsp]
+PreparedStatement cannot be resolved to a type
+30: 
+31:                     // Verifica duplicidade
+32:                     String checkSql = "SELECT * FROM clientes WHERE cpf = ? OR email = ?";
+33:                     PreparedStatement checkSt = conecta.prepareStatement(checkSql);
+34:                     checkSt.setString(1, cpf);
+35:                     checkSt.setString(2, email);
+36:                     ResultSet rs = checkSt.executeQuery();
+
+
+An error occurred at line: [36] in the jsp file: [/processar_cadastro.jsp]
+ResultSet cannot be resolved to a type
+33:                     PreparedStatement checkSt = conecta.prepareStatement(checkSql);
+34:                     checkSt.setString(1, cpf);
+35:                     checkSt.setString(2, email);
+36:                     ResultSet rs = checkSt.executeQuery();
+37: 
+38:                     boolean isDuplicate = false;
+39: 
+
+
+An error occurred at line: [53] in the jsp file: [/processar_cadastro.jsp]
+PreparedStatement cannot be resolved to a type
+50: 
+51:                     if (!isDuplicate) {
+52:                         String sql = "INSERT INTO clientes (nome, cpf, telefone, email, endereco, observacao) VALUES (?, ?, ?, ?, ?, ?)";
+53:                         PreparedStatement st = conecta.prepareStatement(sql);
+54:                         st.setString(1, nome);
+55:                         st.setString(2, cpf);
+56:                         st.setString(3, telefone);
+
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [25] in the jsp file: [/processar_cadastro.jsp]
+Connection cannot be resolved to a type
+22:             if (nome != null && cpf != null && email != null) {
+23:                 try {
+24:                     Class.forName("com.mysql.cj.jdbc.Driver");
+25:                     Connection conecta = DriverManager.getConnection(
+26:                         "jdbc:mysql://localhost:3306/autocenterdb", 
+27:                         "root", 
+28:                         "123456"
+
+
+An error occurred at line: [25] in the jsp file: [/processar_cadastro.jsp]
+DriverManager cannot be resolved
+22:             if (nome != null && cpf != null && email != null) {
+23:                 try {
+24:                     Class.forName("com.mysql.cj.jdbc.Driver");
+25:                     Connection conecta = DriverManager.getConnection(
+26:                         "jdbc:mysql://localhost:3306/autocenterdb", 
+27:                         "root", 
+28:                         "123456"
+
+
+An error occurred at line: [33] in the jsp file: [/processar_cadastro.jsp]
+PreparedStatement cannot be resolved to a type
+30: 
+31:                     // Verifica duplicidade
+32:                     String checkSql = "SELECT * FROM clientes WHERE cpf = ? OR email = ?";
+33:                     PreparedStatement checkSt = conecta.prepareStatement(checkSql);
+34:                     checkSt.setString(1, cpf);
+35:                     checkSt.setString(2, email);
+36:                     ResultSet rs = checkSt.executeQuery();
+
+
+An error occurred at line: [36] in the jsp file: [/processar_cadastro.jsp]
+ResultSet cannot be resolved to a type
+33:                     PreparedStatement checkSt = conecta.prepareStatement(checkSql);
+34:                     checkSt.setString(1, cpf);
+35:                     checkSt.setString(2, email);
+36:                     ResultSet rs = checkSt.executeQuery();
+37: 
+38:                     boolean isDuplicate = false;
+39: 
+
+
+An error occurred at line: [53] in the jsp file: [/processar_cadastro.jsp]
+PreparedStatement cannot be resolved to a type
+50: 
+51:                     if (!isDuplicate) {
+52:                         String sql = "INSERT INTO clientes (nome, cpf, telefone, email, endereco, observacao) VALUES (?, ?, ?, ?, ?, ?)";
+53:                         PreparedStatement st = conecta.prepareStatement(sql);
+54:                         st.setString(1, nome);
+55:                         st.setString(2, cpf);
+56:                         st.setString(3, telefone);
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:81)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:214)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:543)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:377)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:325)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:663)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:1570)
+01-Dec-2024 10:50:38.436 SEVERE [http-nio-8080-exec-3] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/ProjetoSenac] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [25] in the jsp file: [/processar_cadastro.jsp]
+Connection cannot be resolved to a type
+22:             if (nome != null && cpf != null && email != null) {
+23:                 try {
+24:                     Class.forName("com.mysql.cj.jdbc.Driver");
+25:                     Connection conecta = DriverManager.getConnection(
+26:                         "jdbc:mysql://localhost:3306/autocenterdb", 
+27:                         "root", 
+28:                         "123456"
+
+
+An error occurred at line: [25] in the jsp file: [/processar_cadastro.jsp]
+DriverManager cannot be resolved
+22:             if (nome != null && cpf != null && email != null) {
+23:                 try {
+24:                     Class.forName("com.mysql.cj.jdbc.Driver");
+25:                     Connection conecta = DriverManager.getConnection(
+26:                         "jdbc:mysql://localhost:3306/autocenterdb", 
+27:                         "root", 
+28:                         "123456"
+
+
+An error occurred at line: [33] in the jsp file: [/processar_cadastro.jsp]
+PreparedStatement cannot be resolved to a type
+30: 
+31:                     // Verifica duplicidade
+32:                     String checkSql = "SELECT * FROM clientes WHERE cpf = ? OR email = ?";
+33:                     PreparedStatement checkSt = conecta.prepareStatement(checkSql);
+34:                     checkSt.setString(1, cpf);
+35:                     checkSt.setString(2, email);
+36:                     ResultSet rs = checkSt.executeQuery();
+
+
+An error occurred at line: [36] in the jsp file: [/processar_cadastro.jsp]
+ResultSet cannot be resolved to a type
+33:                     PreparedStatement checkSt = conecta.prepareStatement(checkSql);
+34:                     checkSt.setString(1, cpf);
+35:                     checkSt.setString(2, email);
+36:                     ResultSet rs = checkSt.executeQuery();
+37: 
+38:                     boolean isDuplicate = false;
+39: 
+
+
+An error occurred at line: [53] in the jsp file: [/processar_cadastro.jsp]
+PreparedStatement cannot be resolved to a type
+50: 
+51:                     if (!isDuplicate) {
+52:                         String sql = "INSERT INTO clientes (nome, cpf, telefone, email, endereco, observacao) VALUES (?, ?, ?, ?, ?, ?)";
+53:                         PreparedStatement st = conecta.prepareStatement(sql);
+54:                         st.setString(1, nome);
+55:                         st.setString(2, cpf);
+56:                         st.setString(3, telefone);
+
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [25] in the jsp file: [/processar_cadastro.jsp]
+Connection cannot be resolved to a type
+22:             if (nome != null && cpf != null && email != null) {
+23:                 try {
+24:                     Class.forName("com.mysql.cj.jdbc.Driver");
+25:                     Connection conecta = DriverManager.getConnection(
+26:                         "jdbc:mysql://localhost:3306/autocenterdb", 
+27:                         "root", 
+28:                         "123456"
+
+
+An error occurred at line: [25] in the jsp file: [/processar_cadastro.jsp]
+DriverManager cannot be resolved
+22:             if (nome != null && cpf != null && email != null) {
+23:                 try {
+24:                     Class.forName("com.mysql.cj.jdbc.Driver");
+25:                     Connection conecta = DriverManager.getConnection(
+26:                         "jdbc:mysql://localhost:3306/autocenterdb", 
+27:                         "root", 
+28:                         "123456"
+
+
+An error occurred at line: [33] in the jsp file: [/processar_cadastro.jsp]
+PreparedStatement cannot be resolved to a type
+30: 
+31:                     // Verifica duplicidade
+32:                     String checkSql = "SELECT * FROM clientes WHERE cpf = ? OR email = ?";
+33:                     PreparedStatement checkSt = conecta.prepareStatement(checkSql);
+34:                     checkSt.setString(1, cpf);
+35:                     checkSt.setString(2, email);
+36:                     ResultSet rs = checkSt.executeQuery();
+
+
+An error occurred at line: [36] in the jsp file: [/processar_cadastro.jsp]
+ResultSet cannot be resolved to a type
+33:                     PreparedStatement checkSt = conecta.prepareStatement(checkSql);
+34:                     checkSt.setString(1, cpf);
+35:                     checkSt.setString(2, email);
+36:                     ResultSet rs = checkSt.executeQuery();
+37: 
+38:                     boolean isDuplicate = false;
+39: 
+
+
+An error occurred at line: [53] in the jsp file: [/processar_cadastro.jsp]
+PreparedStatement cannot be resolved to a type
+50: 
+51:                     if (!isDuplicate) {
+52:                         String sql = "INSERT INTO clientes (nome, cpf, telefone, email, endereco, observacao) VALUES (?, ?, ?, ?, ?, ?)";
+53:                         PreparedStatement st = conecta.prepareStatement(sql);
+54:                         st.setString(1, nome);
+55:                         st.setString(2, cpf);
+56:                         st.setString(3, telefone);
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:81)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:214)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:543)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:377)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:325)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:663)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:1570)
+01-Dec-2024 12:20:14.396 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+01-Dec-2024 12:20:14.396 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
+01-Dec-2024 19:36:31.825 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+01-Dec-2024 19:36:31.825 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+01-Dec-2024 19:36:31.829 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@5b12012e')
+01-Dec-2024 19:44:44.820 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+01-Dec-2024 19:44:44.820 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
+01-Dec-2024 23:16:05.924 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+01-Dec-2024 23:16:05.924 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+01-Dec-2024 23:16:05.928 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@35ff8fc9')
+01-Dec-2024 23:27:00.582 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+01-Dec-2024 23:27:00.582 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
+01-Dec-2024 23:27:05.510 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+01-Dec-2024 23:27:05.510 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+01-Dec-2024 23:27:05.513 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@62dae245')

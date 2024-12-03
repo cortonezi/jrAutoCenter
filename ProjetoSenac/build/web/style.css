@@ -1,0 +1,430 @@
+
+
+html, body {
+    height: 100%; /* Define que a altura total de html e body será 100% da altura da tela. */
+    margin: 0; /* Remove margens padrão do navegador. */
+    display: flex; /* Usa o Flexbox para organizar os elementos filhos. */
+    flex-direction: column; /* Empilha os elementos filhos em uma coluna vertical. */
+
+}
+
+
+
+
+body {
+    font-family: Arial, sans-serif; /* Define a fonte global para Arial ou, se não disponível, sans-serif. */
+    background-color: #f4f4f4; /* Define a cor de fundo do body como cinza claro. */
+    color: #333; /* Define a cor do texto como cinza escuro. */
+    padding-bottom: 10px; /* Adiciona um espaço equivalente à altura do rodapé */
+}
+
+/* Cabeçalho */
+header {
+    background-color: #003366; /* Define o fundo do cabeçalho como azul escuro. */
+    color: #FFD700; /* Define a cor do texto no cabeçalho como amarelo ouro. */
+    padding: 10px; /* Adiciona 20px de espaçamento interno ao cabeçalho. */
+    text-align: center; /* Centraliza o texto horizontalmente no cabeçalho. */
+
+}
+
+header h1 {
+    margin: 0 auto; /* Remove margens e centraliza o título horizontalmente. */
+    font-size: 1.5em; /* Define o tamanho da fonte como 2 vezes o tamanho padrão. */
+}
+
+header p {
+    font-size: 1em; /* Define o tamanho da fonte como 1.2 vezes o tamanho padrão. */
+}
+
+/* Estilo para o menu principal */
+nav {
+    background-color: #555555; /* Define o fundo da barra de navegação como cinza médio */
+    height: 30px; /* Define a altura total da barra de navegação */
+    display: flex; /* Utiliza Flexbox para organizar os itens horizontalmente */
+    align-items: center; /* Centraliza os itens verticalmente na barra */
+    justify-content: center; /* Centraliza os itens horizontalmente na barra */
+}
+
+/* Estilo para a lista não ordenada dentro do menu */
+nav ul {
+    list-style: none; /* Remove os marcadores padrão da lista */
+    margin: 0; /* Remove as margens padrão da lista */
+    padding: 0; /* Remove o preenchimento padrão da lista */
+    display: flex; /* Organiza os itens da lista em linha horizontal */
+    align-items: center; /* Centraliza verticalmente os itens da lista */
+}
+
+/* Estilo para cada item da lista */
+nav li {
+    margin: 0 15px; /* Adiciona 15px de espaço horizontal entre os itens da lista */
+    position: relative; /* Necessário para posicionar o submenu */
+}
+
+/* Estilo para os links dentro do menu */
+nav a {
+    color: #FFD700; /* Define a cor dos links como amarelo para contraste */
+    text-decoration: none; /* Remove o sublinhado padrão dos links */
+    font-weight: bold; /* Define a fonte dos links como negrito */
+    font-size: 0.9em; /* Aumenta o tamanho da fonte em 1.1 vezes o padrão */
+    line-height: 50px; /* Garante alinhamento vertical para o texto dentro da barra */
+}
+
+/* Efeito visual ao passar o mouse sobre os links */
+nav a:hover {
+    color: #fff; /* Altera a cor do link para branco ao passar o mouse */
+}
+
+/* Submenu: Lista aninhada dentro do item "Serviços" */
+/* Submenu */
+.submenu {
+    display: none; /* Esconde o submenu por padrão */
+    position: absolute; /* Posiciona o submenu em relação ao item pai */
+    top: 50px; /* Posiciona o submenu abaixo do menu principal */
+    left: 0; /* Alinha o submenu com o link pai */
+    background-color: #666666; /* Cor de fundo do submenu */
+    padding: 10px 0; /* Espaçamento interno no submenu */
+    list-style: none; /* Remove os marcadores padrão do submenu */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra ao submenu */
+    z-index: 1000; /* Garante que o submenu fique acima de outros elementos */
+}
+
+
+/* Links dentro do submenu */
+.submenu li a {
+    color: #FFD700; /* Define a cor dos links do submenu como amarelo */
+    padding: 5px 10px; /* Espaçamento interno ajustado para os links */
+    display: block; /* Garante que cada link ocupe toda a largura disponível */
+    text-decoration: none; /* Remove o sublinhado padrão dos links */
+    font-size: 0.8em; /* Diminui o tamanho da fonte dos links do submenu */
+    line-height: 1.2; /* Ajusta o espaçamento entre as linhas do texto */
+    margin: 0; /* Remove margens externas dos links */
+}
+
+/* Remove o espaço entre os itens da lista no submenu */
+.submenu li {
+    margin: 0; /* Remove margens entre os itens da lista */
+}
+
+/* Efeito ao passar o mouse */
+.submenu li a:hover {
+    background-color: #333333; /* Fundo mais escuro para o hover */
+    color: #fff; /* Altera a cor do texto para branco ao passar o mouse */
+}
+
+/* Exibe o submenu ao passar o mouse no item pai */
+nav li.dropdown:hover .submenu {
+    display: block; /* Exibe o submenu */
+}
+
+
+/* =================MAIN Estilo do contêiner principal======================== */
+
+
+main {
+    display: flex; /* Define um layout em duas colunas com Flexbox */
+    justify-content: space-between; /* Espaço entre o texto e a imagem */
+    align-items: flex-start; /* Alinha os itens no topo */
+    padding: 20px; /* Espaçamento interno geral */
+    gap: 20px; /* Espaço entre o texto e a imagem */
+    height: 75%; /* Deixa o conteúdo ajustar a altura automaticamente */
+    margin-top: 0px; /* Adiciona espaço entre o menu e o conteúdo principal */
+
+}
+
+/* Estilo para a seção de texto */
+.text-content {
+    flex: 1; /* Faz o texto ocupar 1 parte do espaço */
+    max-width: 60%; /* Limita a largura máxima da coluna de texto */
+    font-family: Arial, sans-serif; /* Define uma fonte clara e profissional */
+    color: #333; /* Define cor de texto escura para legibilidade */
+    margin-top: 0; /* Remove qualquer espaço extra no topo */
+}
+
+.text-content h1 {
+    font-size: 1.8em; /* Tamanho ajustado para o título */
+    color: #003366; /* Azul escuro para destaque */
+    margin-bottom: 10px; /* Espaçamento inferior no título */
+}
+
+.text-content p {
+    font-size: 1em; /* Tamanho do texto normal */
+    line-height: 1.6; /* Espaçamento entre linhas para melhor leitura */
+    margin-bottom: 15px; /* Espaçamento inferior entre parágrafos */
+}
+
+/* Estilo para a imagem */
+.image-content {
+    flex: 1; /* Faz a imagem ocupar 1 parte do espaço */
+    display: flex; /* Centraliza a imagem dentro da seção */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: flex-start; /* Alinha a imagem ao topo */
+    max-width: 40%; /* Limita a largura máxima da coluna de imagem */
+}
+
+.image-content img {
+    max-width: 80%; /* Reduz a largura da imagem */
+    max-height: 70%; /* Reduz a altura da imagem */
+    object-fit: contain; /* Mantém as proporções da imagem */
+
+    border-radius: 8px; /* Bordas arredondadas para visual elegante */
+}
+
+
+
+
+/* Estilo para o iframe */
+iframe {
+    border: none; /* Remove a borda padrão do iframe */
+    width: 90%; /* Faz o iframe ocupar 90% da largura do main */
+    height: 90%; /* Faz o iframe ocupar 90% da altura do main */
+    background-color: rgba(255, 255, 255, 0.8); /* Fundo branco semitransparente no iframe */
+    border-radius: 8px; /* Bordas arredondadas para o iframe */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Sombra suave ao redor do iframe */
+}
+
+
+/* Estilo para o iframe */
+iframe {
+    border: none; /* Remove a borda padrão do iframe */
+    width: 100%; /* Faz o iframe ocupar 100% da largura do main */
+    height: 100%; /* Faz o iframe ocupar 100% da altura do main */
+}
+
+
+
+/* Rodapé */
+footer {
+    background-color: #333333; /* Fundo do rodapé */
+    color: #ffffff; /* Cor do texto no rodapé */
+    text-align: center; /* Centraliza o texto horizontalmente */
+    padding: 1px; /* Adiciona espaçamento interno no topo e embaixo */
+    font-size: 0.4em; /* Define o tamanho do texto */
+    position: fixed; /* Fixa o rodapé em um ponto específico da tela */
+    bottom: 0; /* Posiciona o rodapé na parte inferior da tela */
+    width: 100%; /* Faz o rodapé ocupar toda a largura da tela */
+    margin-top: 40px; /* Adiciona espaçamento superior entre o rodapé e o conteúdo acima */
+}
+
+
+
+/* =========================== FORMULARIO ===================================*/
+
+/* Estilo do formulário */
+form {
+    max-width: 1600px; /* Ajusta a largura máxima para maior centralização */
+    margin: 20px auto; /* Centraliza o formulário e adiciona espaço superior/inferior */
+    background: #fff; /* Fundo branco */
+    padding: 40px; /* Espaçamento interno */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    display: grid; /* Usa Grid Layout */
+    grid-template-columns: repeat(2, 1fr); /* Divide o formulário em 2 colunas */
+    gap: 30px; /* Espaçamento uniforme entre campos */
+}
+
+/* Campos que ocupam uma linha inteira */
+form textarea,
+form button {
+    grid-column: 1 / 3; /* Faz o campo ou botão ocupar as duas colunas */
+}
+
+/* Alinhamento e estilo dos rótulos */
+form label {
+    font-weight: bold; /* Negrito para os rótulos */
+    color: #333; /* Cor cinza escuro */
+    margin-bottom: 5px; /* Espaço inferior no rótulo */
+    display: block; /* Faz o rótulo ocupar toda a largura */
+    font-size: 0.9em; /* Tamanho da fonte ajustado */
+}
+
+/* Estilo para os campos de entrada */
+form input,
+form select,
+form textarea {
+    width: 100%; /* Campos ocupam toda a largura da célula */
+    padding: 10px; /* Espaçamento interno */
+    border: 1px solid #ccc; /* Borda cinza clara */
+    border-radius: 4px; /* Bordas arredondadas */
+    font-size: 0.9em; /* Tamanho da fonte */
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra interna */
+    transition: border-color 0.3s ease; /* Transição suave para bordas */
+}
+
+/* Estilo adicional para campos com erro */
+form input:focus,
+form select:focus,
+form textarea:focus {
+    border-color: #00509e; /* Borda azul escura ao focar no campo */
+    outline: none; /* Remove o contorno padrão */
+    
+}
+
+/* Botão de cadastro */
+form button {
+    background-color: #003366; /* Fundo azul escuro */
+    color: #fff; /* Texto branco */
+    padding: 12px 20px; /* Ajusta o tamanho do botão */
+    border: none; /* Remove borda padrão */
+    cursor: pointer; /* Mostra o cursor de ponteiro ao passar o mouse */
+    font-weight: bold; /* Texto em negrito */
+    border-radius: 4px; /* Bordas arredondadas */
+    transition: background-color 0.3s ease; /* Transição suave no hover */
+}
+
+/* Efeito no botão ao passar o mouse */
+form button:hover {
+    background-color: #00509e; /* Azul mais claro no hover */
+}
+
+/* Mensagens de erro */
+.error {
+    color: red; /* Texto vermelho */
+    font-size: 0.8em; /* Texto menor */
+    margin-top: 5px; /* Espaço entre o campo e a mensagem */
+    font-weight: bold; /* Texto em negrito */
+    line-height: 1.2; /* Melhor legibilidade */
+    
+}
+
+/* Estilo para o título do formulário */
+form h1 {
+    grid-column: 1 / -1; /* Faz o título ocupar toda a largura do formulário */
+    text-align: center; /* Centraliza o texto do título */
+    margin-bottom: 20px; /* Adiciona espaçamento inferior */
+    color: #003366; /* Define a cor do texto como azul escuro */
+    font-size: 1.8em; /* Aumenta o tamanho do título */
+    font-weight: bold; /* Deixa o texto em negrito */
+}
+
+/* Ajuste para subtítulos opcionais (se aplicável) */
+form h2 {
+    grid-column: 1 / -1; /* O subtítulo também ocupa toda a largura */
+    text-align: center; /* Centraliza o texto */
+    margin-bottom: 10px; /* Espaçamento inferior */
+    color: #003366; /* Define a cor do texto como azul escuro */
+    font-size: 1.2em; /* Tamanho menor que o título principal */
+    font-weight: bold; /* Com negrito para diferenciação */
+}
+
+/* Campos que ocupam uma linha inteira */
+form .form-group[style*="grid-column: 1 / 3"] {
+    grid-column: 1 / 3; /* Faz o grupo ocupar toda a largura */
+    
+    
+}
+
+
+/* ====================== ESTILO PARA OS BOTÕES ============================ */
+
+
+/* Contêiner centralizado */
+.center-container {
+    display: flex; /* Ativa o Flexbox */
+    flex-direction: column; /* Organiza os itens na vertical */
+    justify-content: right ; /* Centraliza os itens verticalmente */
+    align-items: center; /* Centraliza os itens horizontalmente */
+    height: 100vh; /* Ocupa toda a altura da janela */
+    text-align: center; /* Centraliza o texto */
+    margin: 0; /* Remove margens desnecessárias */
+    padding: 0; /* Remove espaçamento interno */
+    box-sizing: border-box; /* Garante que margens e preenchimento sejam incluídos no tamanho total */
+}
+
+/* Título */
+.center-container h1 {
+    font-size: 2rem; /* Aumenta o tamanho do título */
+    color: #003366; /* Azul escuro */
+    margin-bottom: 20px; /* Espaçamento inferior */
+}
+
+/* Botões */
+.center-container .btn {
+    display: inline-block; /* Exibe os botões como blocos em linha */
+    background-color: #003366; /* Fundo azul escuro */
+    color: #fff; /* Texto branco */
+    text-decoration: none; /* Remove sublinhado */
+    padding: 10px 20px; /* Espaçamento interno */
+    border-radius: 5px; /* Bordas arredondadas */
+    font-size: 16px; /* Tamanho da fonte */
+    font-weight: bold; /* Texto em negrito */
+    margin: 10px; /* Espaçamento entre os botões */
+    transition: background-color 0.3s ease; /* Efeito suave no hover */
+    text-align: center; /* Centraliza o texto */
+}
+
+/* Efeito ao passar o mouse */
+.center-container .btn:hover {
+    background-color: #00509e; /* Azul mais claro no hover */
+    color: #ffffff; /* Mantém o texto branco */
+}
+
+
+
+/* ========================== RESPONSIVIDADE ============================== */
+
+@media (max-width: 768px) {
+    form {
+        grid-template-columns: 1fr; /* Campos em uma única coluna para telas menores */
+        padding: 20px; /* Reduz o espaçamento interno */
+    }
+
+    form textarea,
+    form button {
+        grid-column: 1 / 2; /* Campos ocupam toda a largura */
+    }
+}
+
+
+
+
+
+/* ====================== ESTILO TABELA=================================*/
+
+/* Estilo da Tabela */
+table {
+    width: 100%; /* Faz a tabela ocupar toda a largura disponível */
+    border-collapse: collapse; /* Remove as bordas duplas */
+    margin-top: 20px; /* Espaçamento entre o título e a tabela */
+    margin-bottom: 40px; /* Adiciona espaçamento entre a tabela e o rodapé */
+    background-color: #f9f9f9; /* Fundo claro para a tabela */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    border-radius: 8px; /* Bordas arredondadas */
+    overflow: hidden; /* Garante que as bordas arredondadas funcionem */
+}
+
+/* Estilo do Cabeçalho da Tabela */
+table thead {
+    background-color: #003366; /* Fundo azul escuro */
+    color: #fff; /* Texto branco */
+}
+
+table thead th {
+    padding: 12px; /* Espaçamento interno nas células do cabeçalho */
+    text-align: left; /* Alinhamento do texto no cabeçalho */
+    font-size: 1em; /* Tamanho da fonte */
+}
+
+/* Estilo das Células do Corpo da Tabela */
+table tbody td {
+    padding: 10px; /* Espaçamento interno nas células */
+    border-bottom: 1px solid #ddd; /* Linha separadora entre as células */
+    font-size: 0.9em; /* Tamanho da fonte */
+    color: #333; /* Cor do texto */
+}
+
+/* Última Linha - Remove Borda Inferior */
+table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+/* Efeito de Passar o Mouse */
+table tbody tr:hover {
+    background-color: #f1f1f1; /* Fundo mais claro ao passar o mouse */
+}
+
+/* Centraliza o Conteúdo em Algumas Colunas */
+table tbody td:nth-child(2), /* Código */
+table tbody td:nth-child(5) { /* Preço */
+    text-align: center; /* Alinha ao centro */
+}
+

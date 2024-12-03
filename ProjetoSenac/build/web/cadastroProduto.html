@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Cadastro de Produtos</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css?v=1.5">
+    </head>
+    <body>
+        <form action="processar_cadastro_produto.jsp" method="post">
+            <h1>Cadastro de Produtos</h1>
+
+            <!-- Nome do Produto -->
+            <div>
+                <label for="nome_produto">Nome do Produto</label>
+                <input type="text" id="nome_produto" name="nome_produto" placeholder="Digite o nome do produto" required>
+            </div>
+
+            <!-- Código do Produto (SKU) -->
+            <div>
+                <label for="codigo_produto">Código do Produto (SKU)</label>
+                <input type="text" id="codigo_produto" name="codigo_produto" placeholder="Digite o código do produto" required>
+            </div>
+
+            <!-- Categoria -->
+            <div>
+                <label for="categoria">Categoria</label>
+                <select id="categoria" name="categoria" required>
+                    <option value="">Selecione uma categoria</option>
+                    <option value="oleos">Óleos e Lubrificantes</option>
+                    <option value="pneus">Pneus</option>
+                    <option value="baterias">Baterias</option>
+                    <option value="filtros">Filtros</option>
+                    <option value="acessorios">Acessórios</option>
+                </select>
+            </div>
+
+            <!-- Marca -->
+            <div>
+                <label for="marca">Marca</label>
+                <input type="text" id="marca" name="marca" placeholder="Digite a marca do produto" required>
+            </div>
+
+            <!-- Descrição -->
+            <div style="grid-column: 1 / -1;">
+                <label for="descricao">Descrição</label>
+                <textarea id="descricao" name="descricao" placeholder="Digite uma descrição detalhada do produto" rows="3" required></textarea>
+            </div>
+
+            <!-- Compatibilidade -->
+            <div style="grid-column: 1 / -1;">
+                <label for="compatibilidade">Compatibilidade</label>
+                <textarea id="compatibilidade" name="compatibilidade" placeholder="Modelos de veículos compatíveis (opcional)" rows="2"></textarea>
+            </div>
+
+            <!-- Quantidade em Estoque -->
+            <div>
+                <label for="estoque">Quantidade em Estoque</label>
+                <input type="number" id="estoque" name="estoque" placeholder="Digite a quantidade disponível" required>
+            </div>
+
+            <!-- Estoque Mínimo -->
+            <div>
+                <label for="estoque_minimo">Estoque Mínimo</label>
+                <input type="number" id="estoque_minimo" name="estoque_minimo" placeholder="Digite o estoque mínimo" required>
+            </div>
+
+            <!-- Preço de Custo -->
+            <div>
+                <label for="preco_custo">Preço de Custo (R$)</label>
+                <input type="number" id="preco_custo" name="preco_custo" placeholder="Digite o preço de custo" step="0.01" required>
+            </div>
+
+            <!-- Preço de Venda -->
+            <div>
+                <label for="preco_venda">Preço de Venda (R$)</label>
+                <input type="number" id="preco_venda" name="preco_venda" placeholder="Digite o preço de venda" step="0.01" required>
+            </div>
+
+            
+            <!-- Código de Barras -->
+            <div>
+                <label for="codigo_barras">Código de Barras</label>
+                <input type="text" id="codigo_barras" name="codigo_barras" placeholder="Digite o código de barras">
+            </div>
+
+            <!-- Fornecedor -->
+            <div>
+                <label for="fornecedor">Fornecedor</label>
+                <input type="text" id="fornecedor" name="fornecedor" placeholder="Digite o nome do fornecedor">
+            </div>
+
+            <!-- Botão de Enviar -->
+            <button type="submit">Cadastrar Produto</button>
+        </form>
+    </body>
+</html>
