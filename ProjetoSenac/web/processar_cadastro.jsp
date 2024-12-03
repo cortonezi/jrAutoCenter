@@ -19,7 +19,11 @@
             // Inicializa as variáveis de controle
             boolean cadastroSucesso = false;
             String nome = request.getParameter("nome");
+            
             String cpf = request.getParameter("cpf");
+            cpf = cpf.replaceAll("(\\d{3})(\\d{3})(\\d{3})(\\d{2})", "$1.$2.$3-$4");
+
+            
             String telefone = request.getParameter("telefone");
             String email = request.getParameter("email");
             String endereco = request.getParameter("endereco");
